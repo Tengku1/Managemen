@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class pembelian_dibayar_dimuka extends Model
 {
     use HasFactory;
-    protected $table = "hutang";
+    protected $table = "pembayaran_dibayar_dimuka";
     protected $fillable = [
         "no_kasbon",
         "tgl_kasbon",

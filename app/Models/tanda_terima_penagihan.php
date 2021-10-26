@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class tanda_terima_penagihan extends Model
 {
     use HasFactory;
-    protected $table = "hutang";
+    protected $table = "tanda_terima_penagihan";
     protected $fillable = [
         "kode_ttp",
         "no_faktur",

@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class rekap_pembelian extends Model
 {
     use HasFactory;
-    protected $table = "hutang";
+    protected $table = "rekap_pembelian";
     protected $fillable = [
         "no_po",
         "jumlah_faktur",

@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class rekap_pembayaran extends Model
 {
     use HasFactory;
-    protected $table = "hutang";
+    protected $table = "rekap_pembayaran";
     protected $fillable = [
         "no_rekap",
         "no_po",
