@@ -576,3 +576,6 @@
         </footer>
     </div>
 @endsection
+@section('scripts')
+    @include('utility.chartJs')
+@endsection
