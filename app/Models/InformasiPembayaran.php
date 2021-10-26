@@ -8,19 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class InformasiPembayaran extends Model
 {
     use HasFactory;
-    protected $table = "rekap_pembelian";
+    protected $table = "informasi_pembayaran";
     protected $fillable = [
-        "no_po",
-        "jumlah_po",
         "no_faktur",
-        "nominal_faktur",
-        "no_kasbon",
-        "jumlah_kasbon",
-        "kode_penerimaan_barang",
-        "no_rekap",
-        "tgl_rekap",
         "nominal",
-        "ppn"
+        "kode_ttp",
+        "tgl_pengambilan",
     ];
     public $timestamps = false;
 }
