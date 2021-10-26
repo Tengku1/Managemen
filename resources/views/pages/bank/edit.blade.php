@@ -6,76 +6,69 @@
                 <h6 class="text-white text-capitalize ps-3">Ubah Order</h6>
             </div>
         </div>
-        <form action="{{ route('order.update') }}" method="POST">
+        <form action="{{ route('bank.update') }}" method="POST">
             {{ csrf_field() }}
             @method('PATCH')
             <div class="card-body">
                 <input type="hidden" name="id" value="{{ $table['id'] }}">
                 <div class="form-group row">
-                    <div class="col-md-6">
-                        <label for="title">Nama Barang</label>
-                        <input type="text" class="form-control" name="nama_barang" value="{{ $table['nama_barang'] }}"
+                    <div class="col-md-4">
+                        <label for="title">No Cek</label>
+                        <input type="number" class="form-control" name="no_cek" value="{{ $table['no_cek'] }}" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="title">No Bg</label>
+                        <input type="number" class="form-control" name="no_bg" value="{{ $table['no_bg'] }}" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="title">No Rekap</label>
+                        <input type="number" class="form-control" name="no_rekap" value="{{ $table['no_rekap'] }}"
                             required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="title">Nama Supplier</label>
-                        <input type="text" class="form-control" name="nama_supplier"
-                            value="{{ $table['nama_supplier'] }}" required>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-md-6">
-                        <label for="title">Volume Barang</label>
-                        <input type="text" class="form-control" name="volume" value="{{ $table['volume'] }}" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="title">Harga Satuan</label>
-                        <input type="number" class="form-control" name="harga_satuan"
-                            value="{{ $table['harga_satuan'] }}" required>
                     </div>
                 </div>
                 <div class="form-group row">
                     <div class="col-md-4">
-                        <label for="title">Total Barang</label>
-                        <input type="number" class="form-control" name="total" value="{{ $table['total'] }}" required>
-                    </div>
-                    <div class="col-md-4">
-                        <label for="title">Total Harga</label>
-                        <input type="number" class="form-control" name="total_harga" value="{{ $table['total_harga'] }}"
+                        <label for="title">No Faktur</label>
+                        <input type="number" class="form-control" name="no_faktur" value="{{ $table['no_faktur'] }}"
                             required>
                     </div>
                     <div class="col-md-4">
-                        <label for="title">Discount</label>
-                        <input type="number" class="form-control" name="discount" value="{{ $table['discount'] }}"
+                        <label for="title">Kode Tanda Terima Penagihan</label>
+                        <input type="text" class="form-control" name="kode_ttp" value="{{ $table['kode_ttp'] }}"
+                            required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="title">Nominal</label>
+                        <input type="number" class="form-control" name="nominal" value="{{ $table['nominal'] }}"
                             required>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <div class="col-md-6">
-                        <label for="title">Tanggal Dibutuhkan</label>
-                        <input type="date" class="form-control" name="tgl_dibutuhkan"
-                            value="{{ $table['tgl_dibutuhkan'] }}" required>
+                    <div class="col-md-4">
+                        <label for="title">Saldo</label>
+                        <input type="number" class="form-control" name="saldo" value="{{ $table['saldo'] }}" required>
                     </div>
-                    <div class="col-md-6">
-                        <label for="title">Jatuh Tempo</label>
-                        <input type="date" class="form-control" name="jatuh_tempo" value="{{ $table['jatuh_tempo'] }}"
-                            required>
+                    <div class="col-md-4">
+                        <label for="title">Debet</label>
+                        <input type="number" class="form-control" name="debet" value="{{ $table['kredit'] }}" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="title">Kredit</label>
+                        <input type="number" class="form-control" name="kredit" value="{{ $table['debet'] }}" required>
                     </div>
                 </div>
-                <div class="form-group row">
-                    <div class="col-md-6">
-                        <label for="title">PPN</label>
-                        <input type="number" class="form-control" name="ppn" value="{{ $table['ppn'] }}" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="title">Validasi</label>
-                        <input type="text" class="form-control" name="validasi" value="{{ $table['validasi'] }}"
-                            required>
-                    </div>
+                <div class="form-group">
+                    <label for="title">Tanggal Bank Keluar</label>
+                    <input type="date" class="form-control" name="tgl_bank_keluar"
+                        value="{{ $table['tgl_bank_keluar'] }}" required>
                 </div>
                 <div class="form-group mb-3">
-                    <label for="title">Alamat</label>
-                    <textarea class="form-control" name="alamat" required>{{ $table['alamat'] }}</textarea>
+                    <label for="title">Uraian</label>
+                    <textarea name="uraian" class="form-control">{{ $table['uraian'] }}</textarea>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="title">Validasi</label>
+                    <input type="text" class="form-control" name="validasi" value="{{ $table['validasi'] }}" required>
                 </div>
             </div>
             <!-- /.card-body -->
