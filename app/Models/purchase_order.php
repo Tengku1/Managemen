@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class purchase_order extends Model
 {
     use HasFactory;
-    protected $table = "hutang";
+    protected $table = "purchase_order";
     protected $fillable = [
         "tgl_po",
         "tgl_dibutuhkan",
