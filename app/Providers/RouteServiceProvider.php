@@ -36,6 +36,11 @@ class RouteServiceProvider extends ServiceProvider
                 ->middleware(['web', 'auth'])
                 ->namespace($this->namespace)
                 ->group(base_path('routes/penerimaan.php'));
+            Route::prefix('faktur')
+                ->as("faktur.")
+                ->middleware(['web', 'auth'])
+                ->namespace($this->namespace)
+                ->group(base_path('routes/faktur.php'));
         });
     }
 

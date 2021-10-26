@@ -14,7 +14,7 @@
 </li>
 <li class="nav-item">
     <a class="nav-link text-white  {{ Request::segment(1) == 'faktur' ? 'bg-gradient-primary active' : '' }}"
-        href="./pages/tables.html">
+        href="{{ route('faktur.get') }}">
         <i class="fa fa-user"></i>
         <span class="nav-link-text ms-1">Faktur</span>
     </a>
