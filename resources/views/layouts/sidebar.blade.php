@@ -11,11 +11,11 @@
         </a>
     </div>
     <hr class="horizontal light mt-0 mb-2">
-    <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+    <div class="collapse navbar-collapse" style="height:auto !important;" id="sidenav-collapse-main">
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link text-white {{ Request::segment(1) == 'home' ? 'bg-gradient-primary active' : '' }}"
-                    href="./pages/dashboard.html">
+                    href="{{ route('home') }}">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">dashboard</i>
                     </div>
@@ -46,10 +46,11 @@
     <div class="sidenav-footer position-absolute w-100 bottom-0 ">
         <div class="mx-3">
             <a class="btn bg-gradient-primary mt-4 w-100" href="{{ route('logout') }}"
-                onclick="event.preventDefault(); document.getElementById('frm-logout').submit();"
-                type="button">Logout</a>
-            <form id="frm-logout" action="{{ route('logout') }}" method="POST" style="display: none;">
-                {{ csrf_field() }}
+                onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                {{ __('Logout') }}
+            </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
             </form>
         </div>
     </div>
