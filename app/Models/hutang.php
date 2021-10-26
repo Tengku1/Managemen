@@ -13,7 +13,6 @@ class hutang extends Model
         "no_po",
         "no_faktur_pembelian",
         "jumlah_faktur_pembelian",
-        "kode_hutang",
         "kode_penerimaan_barang",
         "jumlah_po",
         "kode_pemasok",
