@@ -27,6 +27,7 @@
         .form-control {
             border: 1px solid #ddd !important;
             border-radius: 5px;
+            padding: 10px !important;
         }
 
     </style>
