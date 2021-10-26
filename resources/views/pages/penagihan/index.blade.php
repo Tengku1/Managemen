@@ -6,13 +6,13 @@
                 <div class="card my-4">
                     <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                         <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
-                            <h6 class="text-white text-capitalize ps-3">Tabel Penagihan</h6>
+                            <h6 class="text-white text-capitalize ps-3">Tabel Tanda Terima Penagihan</h6>
                         </div>
                     </div>
                     <div class="card-body">
                         <button type="button" class="btn btn-primary mb-2" data-toggle="modal"
                             data-target="#modalTambahData">
-                            Tambah Penagihan
+                            Tambah Tanda Terima Penagihan
                         </button>
                         <table id="myTable" class="table table-bordered table-striped">
                             <thead>
@@ -41,7 +41,7 @@
                                                     </button>
                                                 </a>
                                                 <form action="{{ route('penagihan.destroy') }}" method="post"
-                                                    onsubmit="return confirm('Hapus Order Ini ?')">
+                                                    onsubmit="return confirm('Hapus Tanda Terima Penagihan Ini ?')">
                                                     @csrf
                                                     @method("DELETE")
                                                     <input type="hidden" name="id" value="{{ $item['id'] }}">

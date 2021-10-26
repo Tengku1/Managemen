@@ -41,7 +41,7 @@
                                                     </button>
                                                 </a>
                                                 <form action="{{ route('penerimaan.destroy') }}" method="post"
-                                                    onsubmit="return confirm('Hapus Penerimaan Ini ?')">
+                                                    onsubmit="return confirm('Hapus Penerimaan Barang Ini ?')">
                                                     @csrf
                                                     @method("DELETE")
                                                     <input type="hidden" name="id" value="{{ $item['id'] }}">

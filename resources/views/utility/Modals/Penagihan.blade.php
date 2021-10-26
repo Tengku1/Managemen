@@ -15,7 +15,7 @@
             <label for="title">Tanggal Pengambilan</label>
             <input type="date" class="form-control" name="tgl_pengambilan" required>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 mb-3">
             <label for="title">Nominal</label>
             <input type="number" class="form-control" name="nominal" required>
         </div>

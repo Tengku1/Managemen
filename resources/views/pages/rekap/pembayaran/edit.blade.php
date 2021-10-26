@@ -3,7 +3,7 @@
     <div class="card card-primary my-4">
         <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
             <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
-                <h6 class="text-white text-capitalize ps-3">Ubah Order</h6>
+                <h6 class="text-white text-capitalize ps-3">Ubah Rekap Pembayaran</h6>
             </div>
         </div>
         <form action="{{ route('rekap-pembayaran.update') }}" method="POST">

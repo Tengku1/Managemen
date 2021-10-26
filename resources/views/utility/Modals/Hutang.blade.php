@@ -40,7 +40,7 @@
             <input type="number" class="form-control" name="jumlah_faktur_pembelian" required>
         </div>
     </div>
-    <div class="form-group">
+    <div class="form-group mb-3">
         <label for="title">PPN</label>
         <input type="number" class="form-control" name="ppn" required>
     </div>
