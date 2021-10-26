@@ -17,7 +17,6 @@ class penerimaan_barang extends Model
         "volume",
         "satuan",
         "keterangan",
-        "no_penerimaan",
         "tgl_penerimaan",
         "validasi",
     ];
