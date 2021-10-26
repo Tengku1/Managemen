@@ -10,7 +10,7 @@ class kasbon extends Model
     use HasFactory;
     protected $table = "kasbon";
     protected $fillable = [
-        "nama__penerima",
+        "nama_penerima",
         "jabatan",
         "nominal",
         "keperluan",

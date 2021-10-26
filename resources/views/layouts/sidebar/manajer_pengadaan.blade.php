@@ -21,7 +21,7 @@
 </li>
 <li class="nav-item">
     <a class="nav-link text-white  {{ Request::segment(1) == 'kasbon' ? 'bg-gradient-primary active' : '' }}"
-        href="./pages/tables.html">
+        href="{{ route('kasbon.get') }}">
         <i class="fa fa-user"></i>
         <span class="nav-link-text ms-1">Kasbon</span>
     </a>

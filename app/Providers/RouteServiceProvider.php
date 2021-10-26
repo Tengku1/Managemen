@@ -41,6 +41,11 @@ class RouteServiceProvider extends ServiceProvider
                 ->middleware(['web', 'auth'])
                 ->namespace($this->namespace)
                 ->group(base_path('routes/faktur.php'));
+            Route::prefix('kasbon')
+                ->as("kasbon.")
+                ->middleware(['web', 'auth'])
+                ->namespace($this->namespace)
+                ->group(base_path('routes/kasbon.php'));
         });
     }
 
