@@ -1,5 +1,5 @@
 <li class="nav-item">
-    <a class="nav-link text-white " href="./pages/tables.html">
+    <a class="nav-link text-white " href="{{ route('order.get') }}">
         <i class="fa fa-bill"></i>
         <span class="nav-link-text ms-1">Purchase Order</span>
     </a>
