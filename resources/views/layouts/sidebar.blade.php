@@ -31,9 +31,9 @@
             @elseif(Auth::user()->roles == "pemasok")
                 @include('layouts.sidebar.pemasok')
             @elseif(Auth::user()->roles == "manager_keuangan")
-                @include('layouts.sidebar.manager_keuangan')
+                @include('layouts.sidebar.manajer_keuangan')
             @elseif(Auth::user()->roles == "manager_pengadaan")
-                @include('layouts.sidebar.manager_pengadaan')
+                @include('layouts.sidebar.manajer_pengadaan')
             @elseif(Auth::user()->roles == "pengadaan")
                 @include('layouts.sidebar.pengadaan')
             @else

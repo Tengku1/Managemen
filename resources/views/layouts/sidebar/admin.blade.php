@@ -7,7 +7,7 @@
 </li>
 <li class="nav-item">
     <a class="nav-link text-white   {{ Request::segment(1) == 'pembelian-kontan' ? 'bg-gradient-primary active' : '' }}"
-        href="{{ route('pembelian.get') }}">
+        href="{{ route('kontan.get') }}">
         <i class="fa fa-user"></i>
         <span class="nav-link-text ms-1">Pembelian Kontan</span>
     </a>

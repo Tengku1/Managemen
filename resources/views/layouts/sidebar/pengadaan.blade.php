@@ -27,15 +27,15 @@
     </a>
 </li>
 <li class="nav-item">
-    <a class="nav-link text-white  {{ Request::segment(1) == 'tanda-terima' ? 'bg-gradient-primary active' : '' }}"
-        href="./pages/tables.html">
+    <a class="nav-link text-white  {{ Request::segment(1) == 'penagihan' ? 'bg-gradient-primary active' : '' }}"
+        href="{{ route('penagihan.get') }}">
         <i class="fa fa-user"></i>
         <span class="nav-link-text ms-1">Tanda Terima Penagihan</span>
     </a>
 </li>
 <li class="nav-item">
     <a class="nav-link text-white  {{ Request::segment(1) == 'rekap-pembelian' ? 'bg-gradient-primary active' : '' }}"
-        href="./pages/tables.html">
+        href="{{ route('rekap-pembelian.get') }}">
         <i class="fa fa-user"></i>
         <span class="nav-link-text ms-1">Rekap Pembelian</span>
     </a>
