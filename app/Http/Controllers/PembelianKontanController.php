@@ -8,7 +8,7 @@ class PembelianKontanController extends Controller
 {
     public function __construct()
     {
-        $this->page = "pages.pembelian.kontan";
+        $this->page = "pages.pembelian.kontan.";
         $this->modalPage = "utility.Modals.";
     }
     public function index()
@@ -22,7 +22,7 @@ class PembelianKontanController extends Controller
     public function store()
     {
         pembelian_kontan::create(request()->all());
-        return redirect()->to("kontan")->with("success", "Berhasil Input Data");
+        return redirect()->to("pembelian-kontan")->with("success", "Berhasil Input Data");
     }
 
     public function show()
@@ -40,12 +40,12 @@ class PembelianKontanController extends Controller
     public function update()
     {
         pembelian_kontan::where("id", request("id"))->update(request()->except("_method", "_token"));
-        return redirect()->to("kontan")->with("success", "Berhasil Update Data");
+        return redirect()->to("pembelian-kontan")->with("success", "Berhasil Update Data");
     }
 
     public function destroy()
     {
         pembelian_kontan::where("id", request("id"))->delete();
-        return redirect()->to("kontan")->with("success", "Berhasil Hapus Data");
+        return redirect()->to("pembelian-kontan")->with("success", "Berhasil Hapus Data");
     }
 }
